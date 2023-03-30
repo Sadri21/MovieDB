@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:layout_marginVertical="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:gravity="center"
+        android:id="@+id/layout_image">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:riv_corner_radius="10dp"
+            android:layout_weight="2"
+            android:id="@+id/img_movie"
+            android:adjustViewBounds="true"
+            android:src="@drawable/antman"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="16dp"
+        android:text="Ant Man"
+        android:id="@+id/tv_movie_title"
+        android:layout_below="@id/layout_image"
+        android:layout_marginTop="8dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/layout_date"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_movie_title">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/round_calendar_month_black_20"
+            app:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_movie_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="2022-02-21"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_date">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/round_star_black_20"
+            app:tint="@color/yellow"/>
+
+        <TextView
+            android:id="@+id/tv_movie_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="7.7 (232)"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary"
+    android:layout_height="wrap_content">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_profile_review"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/people_placeholder"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/tv_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_profile_review"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Ngakak"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/img_thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/round_recommend_24"
+        app:tint="@color/blue_sky"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@id/img_profile_review"
+        android:layout_below="@id/tv_profile_name"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_profile_count"
+        android:layout_below="@+id/tv_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_thumb"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_review_date"
+        android:layout_below="@+id/img_thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/img_profile_review"
+        android:layout_marginStart="16dp"
+        android:text="2022-12-12"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_review_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_review_date"
+        android:text="text panjang"
+        android:layout_marginHorizontal="16dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        android:alpha=".7"
+        android:textSize="16sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_height="1dp"
+        android:background="@color/blue_light"
+        android:layout_below="@id/tv_review_content"/>
+
+</RelativeLayout>
